@@ -1,0 +1,21 @@
+/* Tady je magie a jednorožci */
+html { box-sizing: border-box; }
+*, ::before, :after { box-sizing: inherit; }
+
+body {
+	padding: 20px;
+	font: 16px/1.5 sans-serif;
+	background-color: #d5d5d5;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+#vystup {
+	padding: 20px;
+	font: 16px/1.5 monospace;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
