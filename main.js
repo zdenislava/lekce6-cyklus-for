@@ -3,12 +3,23 @@
 
 
 // První příklad - vypiš vzestupně čísla od 0 do 10
-console.log('První příklad - vzestupná řada 0 - 10');
+console.log('Prvni příklad');
+let cisla = [];
+
+for (let i = 0; i <= 10; i = i + 1) {
+    cisla.push(i);
+}
+console.log(cisla);
 
 //TADY NAPIS CYKLUS
 
 console.log('-------------------');
 
+let odstavec = document.querySelector(".cisla");
+
+for (let i = 0; i < cisla.length; i++) {
+odstavec.innerHTML += cisla[i] + " ";
+};
 
 
 // Druhý příklad - zkopíruj předchozí příklad
@@ -19,7 +30,14 @@ console.log('Druhý příklad - rozdíl mezi <= a <');
 
 //TADY NAPIS CYKLUS
 
-console.log('-------------------');
+let cislicka = [];
+
+for (let i = 0; i < 10; i = i + 1) {
+    cislicka.push(i);
+}
+console.log(cislicka);
+
+
 
 
 
@@ -28,4 +46,15 @@ console.log('Třetí příklad - sestupná řada 10 - 0');
 
 //TADY NAPIS CYKLUS
 
-console.log('-------------------');
+let cislaDolu = [];
+
+for (let i = 10; i >= 0; i = i - 1) {
+    cislaDolu.push(i);
+}
+console.log(cislaDolu);
+
+let sestupnaRada = document.querySelector(".radaDolu");
+
+for (let i = 0; i < cislaDolu.length; i++) {
+    sestupnaRada.innerHTML += cislaDolu[i] + " ";
+};
